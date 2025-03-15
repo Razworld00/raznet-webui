@@ -2,16 +2,16 @@
 
 ## Overview
 
-The **Raznet WebUI Assistant** is an advanced, multimodal AI application built with [Chainlit](https://github.com/Chainlit/chainlit) and powered by [Ollama](https://ollama.ai/) models. This assistant integrates text processing, image description, web searching, web browsing, and PDF processing into a single, user-friendly interface. It leverages lightweight and efficient models such as `smollm`, `moondream:1.8b-v2-q3_K_S`, `llama3.1:latest`, and `llama3.2:1b` to provide a robust, scalable solution for diverse tasks.
+The **Raznet WebUI Assistant** is an advanced, multimodal AI application built with [Chainlit](https://github.com/Chainlit/chainlit) and powered by [Ollama](https://ollama.ai/) models. This assistant integrates text processing, image description, web searching, web browsing, and PDF processing into a single, user-friendly interface. It leverages lightweight and efficient models such as `any Ollama model` to provide a robust, scalable solution for diverse tasks.
 
-This project supports real-time streaming responses (akin to ChatGPT), tool-calling for external searches and browsing, and a modular architecture. It is designed to run locally on modest hardware (e.g., 8GB RAM with 32GB swap) and is extensible with additional tools or models. Recent enhancements include PDF text extraction and summarization, with exciting new features on the horizon.
+This project supports real-time streaming responses (akin to ChatGPT), tool-calling for external searches and browsing, and a modular architecture. It is designed to run locally on modest hardware (e.g., as small as 4G,8,16G RAM and up depending on your device's hardware strength) and is extensible with additional tools or models. Recent enhancements include PDF text extraction and summarization, with exciting new features on the horizon.
 
 ## Features
 
-- **Text Processing:** Handles calculations, queries, and conversations using `llama3.1:latest` (or `smollm` for lighter usage).
-- **Image Description:** Describes uploaded images with `moondream:1.8b-v2-q3_K_S`, a quantized vision-language model.
-- **Web Searching:** Performs DuckDuckGo searches using `llama3.2:1b` with tool-calling.
-- **Web Browsing:** Fetches and summarizes URLs using `llama3.2:1b`.
+- **Text Processing:** Handles calculations, queries, and conversations using `Ollama large models` (or `any small one of your choice` for lighter usage).
+- **Image Description:** Describes uploaded images with `Ollama vision models`, a quantized vision-language model.
+- **Web Searching:** Performs the likes  of DuckDuckGo searches using `Ollama` with tool-calling.
+- **Web Browsing:** Fetches and summarizes URLs using `Ollama`.
 - **PDF Processing:** Extracts and summarizes text from PDFs using `PyPDF2` (with optional OCR support via `pytesseract` and `pdf2image`).
 - **Streaming Responses:** Delivers real-time, professional-grade streaming for a seamless experience.
 - **Modular Design:** Separated into `app.py`, `models.py`, and `tools.py` for maintainability.
@@ -27,7 +27,7 @@ This project supports real-time streaming responses (akin to ChatGPT), tool-call
 ## Prerequisites
 
 - **Operating System:** Linux (tested on Ubuntu), macOS, or Windows (with WSL).
-- **Hardware:** Minimum 8GB RAM (32GB swap recommended), 10GB free disk space.
+- **Hardware:** Minimum 4GB RAM recommended, 10GB free disk space.
 - **Software:**
   - Python 3.11 or higher.
   - [Ollama](https://ollama.ai/) (for local AI models).
