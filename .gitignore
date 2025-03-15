@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+venv_backup/
+*.out
+*.log
+# Future API safety
+*.key
+*.pem
+api_keys/
+config.ini
